@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook - Miss Khan Designs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Miss Khan Designs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/lookbook">Lookbook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/collaborate">Collaborate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="social-icons ms-3">
+                    <a href="https://instagram.com/misskhan02240" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/@MissKhan-g4d3u" target="_blank"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="display-4">Lookbook</h1>
+            <p class="lead">Explore my portfolio of custom designs and styling work</p>
+        </div>
+    </section>
+
+    <section class="lookbook-filter">
+        <div class="container">
+            <div class="text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="party">Party Wear</button>
+                <button class="filter-btn" data-filter="casual">Casual</button>
+                <button class="filter-btn" data-filter="reels">Reels Styling</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="lookbook-gallery">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 lookbook-item-wrapper" data-category="bridal">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/bridal,wedding-dress,bridalgown?random=1" alt="Bridal Design" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Elegant Bridal Gown</h5>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="party">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/evening-dress,sequins,party?random=1" alt="Party Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Sequined Evening Dress</h5>
+                            <p>Party Wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="casual">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/casual-fashion,street-style,outfit?random=1" alt="Casual Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Chic Summer Outfit</h5>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="reels">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/influencer,photoshoot,content-creator?random=1" alt="Reels Styling" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Instagram Reels Look</h5>
+                            <p>Reels Styling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="bridal">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/bridal,lehenga,wedding?random=1" alt="Bridal Design" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Traditional Bridal Lehenga</h5>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="party">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/cocktail-dress,party,evening?random=1" alt="Party Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Cocktail Party Dress</h5>
+                            <p>Party Wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="casual">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/everyday-fashion,casual,street-style?random=1" alt="Casual Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Everyday Chic</h5>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="reels">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/fashion-reel,styling,editorial?random=1" alt="Reels Styling" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Fashion Reel Styling</h5>
+                            <p>Reels Styling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="bridal">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/bridal,reception-gown,weddingdress?random=1" alt="Bridal Design" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Reception Gown</h5>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="party">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/gala-dress,eveningwear,ballgown?random=1" alt="Party Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Gala Evening Outfit</h5>
+                            <p>Party Wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="casual">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/streetwear,casual,outfit?random=1" alt="Casual Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Street Style Look</h5>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="reels">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/content-creator,fashion-shoot,influencer-style?random=1" alt="Reels Styling" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Content Creator Style</h5>
+                            <p>Reels Styling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="bridal">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/sangeet,outfit,bridal?random=1" alt="Bridal Design" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Sangeet Outfit</h5>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="party">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/party-dress,celebration,fashion?random=1" alt="Party Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Birthday Celebration Dress</h5>
+                            <p>Party Wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="casual">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/weekend-outfit,casual-style,relaxed-fashion?random=1" alt="Casual Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Weekend Casual</h5>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="reels">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/influencer-photoshoot,editorial,fashion?random=1" alt="Reels Styling" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Influencer Photoshoot</h5>
+                            <p>Reels Styling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="bridal">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/mehendi,bridal,traditional-outfit?random=1" alt="Bridal Design" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>Mehendi Ceremony Outfit</h5>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lookbook-item-wrapper" data-category="party">
+                    <div class="lookbook-item">
+                        <img src="https://loremflickr.com/400/500/new-year-party,dress,glamour?random=1" alt="Party Wear" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <h5>New Year's Eve Look</h5>
+                            <p>Party Wear</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Love What You See?</h2>
+                <p>Let's create something beautiful together</p>
+                <a href="/contact" class="btn btn-primary btn-lg">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const filterInit = (function(){
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const lookbookItems = document.querySelectorAll('.lookbook-item-wrapper');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    lookbookItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.9)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        })();
+    </script>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Miss Khan Designs</h4>
+                    <p>Custom Fashion Designs & Styling</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-social">
+                        <a href="https://instagram.com/misskhan02240" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/@MissKhan-g4d3u" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://wa.me/message" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 Miss Khan Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="spa-router.js"></script>
+</body>
+</html>
