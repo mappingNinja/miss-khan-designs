@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about/
+Allow: /services/
+Allow: /contact/
+Allow: /collaborate/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://misskhan.shop/sitemap.xml
+
+# Cache settings
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
