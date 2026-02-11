@@ -1,0 +1,118 @@
+<!-- Instagram Feed & Newsletter Section -->
+<!-- Add this section before the footer on your main pages -->
+
+<section class="instagram-newsletter-section py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <!-- Instagram Feed -->
+            <div class="col-lg-6">
+                <h3 class="mb-4">Follow Our Instagram</h3>
+                <p class="mb-4">Join our 45K+ followers for daily fashion inspiration and styling tips!</p>
+                
+                <!-- Instagram Embed -->
+                <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 2rem;">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/misskhan02240/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;">
+                            <p>Follow <a href="https://www.instagram.com/misskhan02240/">@misskhan02240</a> for daily fashion inspiration!</p>
+                        </div>
+                    </blockquote>
+                </div>
+
+                <a href="https://instagram.com/misskhan02240" target="_blank" class="btn btn-light btn-lg">
+                    <i class="bi bi-instagram"></i> Follow on Instagram
+                </a>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="col-lg-6">
+                <div class="newsletter-card" style="background: rgba(255,255,255,0.95); padding: 2.5rem; border-radius: 12px; color: #333;">
+                    <h3 class="mb-3">Get Fashion Tips & Updates</h3>
+                    <p class="mb-4">Subscribe to our newsletter for exclusive fashion tips, styling advice, and new collection announcements.</p>
+                    
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your name (optional)">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                            Subscribe Now
+                        </button>
+                    </form>
+                    
+                    <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Instagram Script -->
+<script async src="https://www.instagram.com/embed.js"></script>
+
+<!-- Newsletter Form Script -->
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const name = document.getElementById('name').value;
+    
+    // Create a basic validation
+    if (!email) {
+        alert('Please enter your email');
+        return;
+    }
+    
+    // For production, integrate with your email service (Mailchimp, ConvertKit, etc.)
+    // This is a placeholder
+    console.log('Email subscription:', { email, name });
+    
+    // Show success message
+    const button = this.querySelector('button');
+    const originalText = button.innerHTML;
+    button.innerHTML = '✓ Thank you for subscribing!';
+    button.disabled = true;
+    
+    // Reset after 3 seconds
+    setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        document.getElementById('newsletter-form').reset();
+    }, 3000);
+});
+</script>
+
+<style>
+.instagram-newsletter-section {
+    margin: 4rem 0;
+}
+
+.newsletter-card {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.newsletter-form input {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+@media (max-width: 768px) {
+    .instagram-newsletter-section {
+        margin: 2rem 0;
+    }
+    
+    .newsletter-card {
+        margin-top: 2rem;
+    }
+}
+</style>
